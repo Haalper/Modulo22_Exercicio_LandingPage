@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    list-style: none;
+}
+
+.hero {
+    background-image: url(aniversárioo.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.presenca {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(fundoo.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    padding: 0 20px;
+}
+
+.container {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.presenca .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.presenca .container .image-container {
+    margin-top: 20px;
+    max-width: 200px;
+}
+
+.presenca .container .image-container img {
+    width: 100%;
+    height: auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    max-width: 300px;
+    width: 100%;
+}
+
+form label {
+    margin-bottom: 5px;
+}
+
+form input, form button {
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+form button {
+    background-color: #bba4a470;
+    color: #333;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #d38b8b;
+}
+
+@media screen and (max-width: 768px) {
+    .hero {
+        height: 200px;
+    }
+
+    h2 {
+        margin-top: 16px;
+    }
+
+    .presenca {
+        height: auto;
+        padding: 20px;
+    }
+    .presenca .container .image-container {
+        margin-top: 10px;
+    }
+    form {
+        max-width: none;
+    }
+}  
